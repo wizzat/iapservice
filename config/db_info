@@ -1,0 +1,1 @@
+postgresql://analytics:analytics@localhost:5432/iapservice
