@@ -1,9 +1,9 @@
 from iapservice.model import *
 from iapservice.util import *
 from iapservice.server import VerifyRequest
-from iapservice.pyutil.testutil import *
-from iapservice.pyutil.dateutil import *
-import unittest, json, uuid, requests
+from pyutil.testutil import *
+from pyutil.dateutil import *
+import unittest, json, uuid, requests, os
 
 class TestVerification(unittest.TestCase):
     """
@@ -143,7 +143,9 @@ class TestVerification(unittest.TestCase):
     def setUp(self):
         super(TestVerification, self).setUp()
         if not self.valid_iap:
-            with open(find_file("valid_iap"), "r") as fp:
+            local_path = os.path.join(os.environ.get('IAP_SERVICE_CONFIG', '/etc'), 'valid_iap')
+
+            with open(local_path, "r") as fp:
                 self.valid_iap = json.load(fp)
 
         # Grab a separate session than the default session

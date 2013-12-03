@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql import ClauseElement
 from sqlalchemy.schema import UniqueConstraint
 from iapservice.util import *
-from iapservice.pyutil.dateutil import now
+from pyutil.dateutil import now
 import os, json, requests
 
 Base = declarative_base()

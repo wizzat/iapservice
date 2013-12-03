@@ -1,6 +1,6 @@
 from iapservice.model import get_session, Game, Company, User, IOSTransaction
 from iapservice.util import *
-from iapservice.pyutil.dateutil import *
+from pyutil.dateutil import *
 import requests, zlib, web, json
 
 __all__ = [

@@ -1,3 +1,0 @@
-[submodule "iapservice/pyutil"]
-	path = iapservice/pyutil
-	url = git@github.com:wizzat/pyutil.git
