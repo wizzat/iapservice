@@ -33,13 +33,19 @@ Passing along extra data with the transaction is encouraged.  Examples include:
 
 Data passed that interferes with the internal usage of the verification server will be discarded.
 
+As a special note, you will also need to download and install http://www.github.com/wizzat/pyutil in the virtualenv until I find a new name for it and upload it to pypi.
+
 #### Changelong ####
 
+2014-03-03, Version 0.1
+- Update requirements.txt
+
+
 2013-08-08, Version 0.1
-Add support for user tracking
-Add support for transaction tracking
-Add support for detecting the four basic kinds of IAP cheating.
-Add iap verification runner for batching when Apple is down.
+- Add support for user tracking
+- Add support for transaction tracking
+- Add support for detecting the four basic kinds of IAP cheating.
+- Add iap verification runner for batching when Apple is down.
 
 #### TODO ####
 There's a lot of directions a project like this could go.  If you want any of it, please open an issue: https://github.com/wizzat/iapservice/issues/new

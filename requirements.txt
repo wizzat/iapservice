@@ -1,3 +1,6 @@
-sqlalchemy
-requests
-web.py
+SQLAlchemy==0.9.3
+psycopg2==2.5.2
+psycopg2cffi==2.5
+requests==2.2.1
+texttable==0.8.1
+web.py==0.37
